@@ -1,6 +1,7 @@
-let myleads = ["www.hwllo", "hiii"]
+let myleads = []
 let inputEl = document.getElementById("input-el")
 let inputBtn = document.getElementById("input-btn")
+let deleteBtn = document.getElementById("delete-btn")
 let ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function(){
@@ -9,6 +10,10 @@ inputBtn.addEventListener("click", function(){
     render()
  })
 
+ deleteBtn.addEventListener("click", function(){
+    myleads = []
+    render()
+ })
 
 
 function render(){ 
